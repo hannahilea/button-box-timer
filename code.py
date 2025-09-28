@@ -27,8 +27,6 @@ led_red = DigitalInOut(board.D2)
 led_red.direction = Direction.OUTPUT
 led_red.value = True
 
-print("HELLO!")
-
 
 # Cycle colors while button is pushed
 def button_is_pushed():
