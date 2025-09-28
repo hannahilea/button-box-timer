@@ -4,7 +4,7 @@
 
 A "get up and stretch!" timer box, to be installed out of reach but within immediate eyesight of its oft-seated user, who must then stand up to reset it. 
 
-![](./assets/button-box-timer.gif)
+![timer](https://github.com/user-attachments/assets/dc0d7608-f998-422b-bd25-8e7655e6879a)
 
 The timer cycles through the LEDs from green to yellow to red when the hard-coded thresholds are passed (default: 30min, 60min); the timer is reset by pushing and releasing the single button.
 
@@ -21,6 +21,8 @@ This repository holds the CircuitPython script and setup instructions for buildi
     - I used an arcade-style button from Adafruit, but any button will do
 - 3 LEDs (red, green, yellow) with one 100Ω resistor each (well, I used a 430Ω resistor for my red LED, but it really doesn't matter!)
     - The LEDs could easily be swapped out with e.g. a neopixel (or many) or some other indicator light or sound. These happen to be what I had on hand.
+- (Optional) A small prototyping board, for soldering everything together (...plus soldering gear)
+    - Or a breadboard, if you aren't making something semi-permanent.
 
 
 ### Trinket M0 set-up
@@ -29,7 +31,7 @@ This repository holds the CircuitPython script and setup instructions for buildi
 
 2. Replace the default `code.py` on the board with the [`code.py`](./code.py) found in this repository.
 
-3. Optional: Depending on what time durations you want your timer to switch to the yellow and then red light, update THRESHOLD_YELLOW_SEC and RED_THRESHOLD_SEC at the top of the file. 
+3. Optional: Depending on what time durations you want your timer to switch to the yellow and then red light, update `THRESHOLD_YELLOW_SEC` and `RED_THRESHOLD_SEC` at the top of the file. 
 
 4. Optional: Depending on how you wired your button, you may need to invert the "is pushed" value in code. To do this, change the two callsites that say `[...] not button.value` to `[...] button.value`.
 
@@ -49,3 +51,5 @@ Solder it together onto the prototyping board, then stuff the whole shebang into
 Close it up, decorate it as you like (I used a sharpie), and you're ready to go.
 
 ![](./assets/box-closed.jpeg)
+
+🎉
