@@ -2,6 +2,8 @@
 
 [<img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%AA%B4%20Houseplant%20-x?style=flat&amp;label=Project%20type&amp;color=1E1E1D">](https://www.hannahilea.com/blog/houseplant-programming)
 
+_Project write-up here: [Button-box timer](https://www.hannahilea.com/blog/button-box-timer)_
+
 A "get up and stretch!" timer box, to be installed out of reach but within immediate eyesight of its oft-seated user, who must then stand up to reset it. 
 
 ![timer](https://github.com/user-attachments/assets/dc0d7608-f998-422b-bd25-8e7655e6879a)
